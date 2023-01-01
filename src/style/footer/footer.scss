@@ -1,0 +1,44 @@
+.footer {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  border-top: 1px solid rgba(238, 238, 238, 0.1);
+
+  &__menu:not(:last-child) {
+    margin-bottom: 28px;
+  }
+}
+
+
+.menu-footer {
+  &__list {
+    display: flex;
+    column-gap: 48px;
+    row-gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  &__link {
+    line-height: 24px;
+    padding-left: 34px;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &__link_home {
+    background: url('../images/home.svg') left no-repeat;
+  }
+
+  &__link_about {
+    background: url('../images/user.svg') left no-repeat;
+  }
+
+  &__link_contacts {
+    background: url('../images/phone.svg') left no-repeat;
+  }
+}
+
+
+
