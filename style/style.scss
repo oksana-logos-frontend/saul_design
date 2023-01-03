@@ -1,0 +1,45 @@
+@import '../utils/reset';
+@import '../utils/varibles';
+
+@import './header/header.scss';
+@import './header-menu/header-menu.scss';
+@import './footer/footer.scss';
+@import './common/common.scss';
+@import './main/main.scss';
+@import './about/about.scss';
+@import './works/works.scss';
+@import './items-works/items-works.scss';
+@import './contacts/contacts.scss';
+@import './form/form.scss';
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: $pageBackgroundColor;
+  color: $bodyColor;
+  font-size: 18px;
+}
+
+.wrapper {
+  min-height: 100%;
+  overflow: clip;
+  display: flex;
+  flex-direction: column;
+}
+
+.page {
+  flex: 1 1 auto;
+  padding-top: 85px;
+}
+
+[class*="__container"] {
+  max-width: 1280px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
+@media (max-width: 500px) {
+  .page {
+    padding-top: 73px;
+  }
+}

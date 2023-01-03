@@ -1,0 +1,27 @@
+.menu {
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 40px;
+    row-gap: 3px;
+    align-items: center;
+  }
+
+  &__link {
+    color: $mainTextColor;
+    transition: color 0.3s;
+
+    &:hover {
+      color: $mainButtonColor;
+    }
+  }
+}
+
+
+@media (max-width: 500px) {
+  .menu__list {
+    column-gap: 20px;
+  }
+}
+
+

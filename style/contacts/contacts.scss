@@ -1,0 +1,46 @@
+.contacts {
+  padding-top: 155px;
+  padding-bottom: 155px;
+
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr );
+    gap: 48px;
+    align-items: start;
+  }
+
+  &__image {
+    text-align: center;
+
+    & img {
+      max-width: 100%;
+    }
+  }
+}
+
+@media (max-width: 1280px) {
+  .contacts {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+}
+
+@media (max-width: 990px) {
+  .contacts {
+    padding-top: 45px;
+    padding-bottom: 45px;
+
+    &__container {
+      grid-template-columns: auto;
+    }
+
+    &__title {
+      text-align: center;
+    }
+
+    &__image {
+      display: none;
+    }
+  }
+}
+
