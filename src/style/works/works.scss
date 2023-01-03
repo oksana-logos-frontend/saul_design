@@ -1,0 +1,31 @@
+.works {
+  padding-top: 145px;
+  padding-bottom: 145px;
+  background: url('../images/works-background.svg') 0 0 repeat;
+
+  &__title {
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+@media (max-width: 1280px) {
+  .works {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+}
+
+@media (max-width: 990px) {
+  .works {
+    padding-top: 45px;
+    padding-bottom: 45px;
+  }
+}
+
+@media (max-width: 767px) {
+  .works__title  {
+    text-align: center;
+  }
+}

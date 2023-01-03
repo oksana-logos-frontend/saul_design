@@ -5,6 +5,8 @@
 @import './common/common.scss';
 @import './main/main.scss';
 @import './about/about.scss';
+@import './works/works.scss';
+@import './items-works/items-works.scss';
 
 body {
   font-family: 'Poppins', sans-serif;
@@ -23,6 +25,10 @@ body {
 .page {
   flex: 1 1 auto;
   padding-top: 85px;
+
+  &__about{}
+
+  &__works {}
 }
 
 @media (max-width: 500px) {
