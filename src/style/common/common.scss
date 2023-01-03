@@ -2,10 +2,10 @@
   font-weight: 700;
   font-size: 64px;
   line-height: 96px;
-  color: #EEEEEE;
+  color: $mainTextColor;
   
   & span {
-    color: #00ADB5;
+    color: $mainButtonColor;
   }
 }
 
@@ -15,8 +15,8 @@
   font-size: 18px;
   line-height: 27px;
   padding: 10px 32px;
-  color: #EEEEEE;
-  background-color: #00ADB5;
+  color: $mainTextColor;
+  background-color: $mainButtonColor;
   border-radius: 24px;
   transition: background-color 0.3s;
 
@@ -33,7 +33,7 @@
 
 .button_dark:hover,
 .button_dark.active {
-  background-color: #00ADB5;
+  background-color: $mainButtonColor;
 }
 
 

@@ -1,4 +1,6 @@
 @import '../utils/reset';
+@import '../utils/varibles';
+
 @import './header/header.scss';
 @import './header-menu/header-menu.scss';
 @import './footer/footer.scss';
@@ -7,11 +9,13 @@
 @import './about/about.scss';
 @import './works/works.scss';
 @import './items-works/items-works.scss';
+@import './contacts/contacts.scss';
+@import './form/form.scss';
 
 body {
   font-family: 'Poppins', sans-serif;
-  background-color: #222831;
-  color: rgba(238, 238, 238, 0.75);
+  background-color: $pageBackgroundColor;
+  color: $bodyColor;
   font-size: 18px;
 }
 
@@ -25,16 +29,6 @@ body {
 .page {
   flex: 1 1 auto;
   padding-top: 85px;
-
-  &__about{}
-
-  &__works {}
-}
-
-@media (max-width: 500px) {
-  .page {
-    padding-top: 73px;
-  }
 }
 
 [class*="__container"] {
@@ -42,4 +36,10 @@ body {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
+}
+
+@media (max-width: 500px) {
+  .page {
+    padding-top: 73px;
+  }
 }
