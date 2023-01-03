@@ -8,6 +8,7 @@
     "deploy": "gh-pages -d src"
   },
   "devDependencies": {
-    "parcel": "^2.8.2"
+    "parcel": "^2.8.2",
+    "gh-pages": "^4.0.0"
   }
 }
