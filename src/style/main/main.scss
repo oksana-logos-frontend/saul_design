@@ -18,10 +18,10 @@
     font-weight: 700;
     font-size: 96px;
     text-transform: uppercase;
-    color: #EEEEEE;
+    color: $mainTextColor;
 
     & span {
-      color: #00ADB5;
+      color: $mainButtonColor;
     }
 
     &:not(:last-child) {
